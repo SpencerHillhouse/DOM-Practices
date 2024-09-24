@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Practice 3</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <header>
+    <h1>DOM Practice 3</h1>
+    <p>
+      You are to make a window that shows up when the button is clicked and
+      closes when the X is clicked on the new popped out window. You should
+      remove the hidden classes from the "overlaid window" when the button is
+      clicked and add them when the X is clicked on the "overlaid window"
+    </p>
+  </header>
+  <body>
+    <div class="body_of_task">
+      <button id="show-window">Show Window</button>
+      <div class="window hidden">
+        <button id="close-window">&times;</button>
+        <h1>I'm the window that should be hidden! TeeHee</h1>
+        <p>WE ARE SUPER DUPER HIDDEN. YOU WILL NEVER SEE ME. GET GOOD KID.</p>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+  </body>
+</html>

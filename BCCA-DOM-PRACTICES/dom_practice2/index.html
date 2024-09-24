@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Practice 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>DOM Practice 2</h1>
+    <p>
+      You are to make a guess the number game in the div provided below. The
+      following should happen. Your code should generate a random number between
+      1 and 20. The text "Try the Game!" should change to notify the player if
+      the number is too high or too low, or if you are correct! If you get the
+      number correct the background should turn green on the div and the high
+      score should change to reflect the new score. The ? should become the
+      correct number! The score should start at 20 and go down by 1 each time
+      the guess is incorrect. If the score hits 0, the player should lose the
+      game. The player should be able to hit the again button to reset the game
+      but the high score value should remain!
+    </p>
+    <div class="game_header">
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="'btn again">Again!</button>
+      <div name="number">?</div>
+    </div>
+    <div class="game">
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p id="message">Try the Game!</p>
+        <p id="label-score">Score: <span class="score">20</span></p>
+        <p id="label-highscore">Highscore: <span class="highscore">0</span></p>
+      </section>
+    </div>
+  </body>
+</html>
